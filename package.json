@@ -14,12 +14,18 @@
   },
   "dependencies": {
     "@datorama/akita": "^2.2.2",
+    "@loona/react": "^1.0.0",
+    "apollo-cache-inmemory": "^1.4.3",
+    "apollo-client": "^2.4.13",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
     "mobx-state-tree": "^3.10.2",
     "overmind": "^16.0.0",
     "overmind-react": "^17.0.0",
     "react": "^16.8.3",
+    "react-apollo": "^2.4.1",
     "react-dom": "^16.8.3"
   }
 }
