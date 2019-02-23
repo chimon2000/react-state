@@ -1,8 +1,8 @@
-import React from "react";
-import { useOvermind } from "./state";
+import React from 'react'
+import { useOvermind } from './state'
 
 export default function App() {
-  const { state, actions } = useOvermind();
+  const { state, actions } = useOvermind()
 
   return (
     <div>
@@ -12,5 +12,5 @@ export default function App() {
         <button onClick={actions.increment}>Increment</button>
       </div>
     </div>
-  );
+  )
 }

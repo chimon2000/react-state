@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["es2018", "dom"],
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "target": "es2018",
+    "declaration": true,
+    "outDir": "lib"
+  },
+  "include": ["src/**/*"]
+}
