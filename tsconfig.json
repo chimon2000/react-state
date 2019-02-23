@@ -1,11 +1,14 @@
 {
-  "compilerOptions": {
-    "lib": ["es2018", "dom"],
-    "jsx": "react",
-    "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
-  }
+    "compilerOptions": {
+        "lib": ["es2018", "dom"],
+        "jsx": "react",
+        "strict": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "target": "es2016"
+    }
 }
