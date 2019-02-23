@@ -8,7 +8,8 @@ import {
   OvermindModule
 } from 'overmind-angular'
 import { Overmind } from 'overmind'
-import { Store, config } from './overmind/state'
+import { Store } from './overmind/state'
+import { config } from 'shared'
 import { CounterComponent } from './overmind/state/counter.component'
 
 @NgModule({
