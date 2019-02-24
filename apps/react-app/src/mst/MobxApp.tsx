@@ -15,4 +15,4 @@ const App = observer((props: Props) => (
   </div>
 ))
 
-export const MobxApp = () => <App store={store} />
+export default () => <App store={store} />

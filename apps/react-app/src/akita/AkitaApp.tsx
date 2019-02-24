@@ -1,19 +1,20 @@
-import * as React from "react";
-import { counterQuery, counterService } from ".";
-import { Subscription } from "rxjs";
+import * as React from 'react'
+import { counterQuery } from './query'
+import { Subscription } from 'rxjs'
+import { counterService } from './service'
 
-export class AkitaApp extends React.PureComponent {
-  state: { count: number } = { count: 0 };
-  subscription?: Subscription;
+export default class App extends React.PureComponent {
+  state: { count: number } = { count: 0 }
+  subscription?: Subscription
   componentDidMount() {
     this.subscription = counterQuery
       .select(state => state.count)
-      .subscribe(count => this.setState({ count }));
+      .subscribe(count => this.setState({ count }))
   }
 
   componentWillUnmount() {
     if (this.subscription) {
-      this.subscription.unsubscribe();
+      this.subscription.unsubscribe()
     }
   }
 
@@ -24,6 +25,6 @@ export class AkitaApp extends React.PureComponent {
         <div>{this.state.count}</div>
         <button onClick={counterService.increment}>Increment</button>
       </div>
-    );
+    )
   }
 }
