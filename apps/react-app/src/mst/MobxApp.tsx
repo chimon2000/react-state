@@ -1,10 +1,11 @@
-import React from "react";
-import { observer } from "mobx-react";
-import { Store, store } from "./store";
+import React from 'react'
+import { observer } from 'mobx-react'
+import { store } from './store'
+import { Store } from 'shared/lib/mst/store'
 
 type Props = {
-  store: Store;
-};
+  store: Store
+}
 
 const App = observer((props: Props) => (
   <div>
@@ -12,6 +13,6 @@ const App = observer((props: Props) => (
     <div>{props.store.count}</div>
     <button onClick={props.store.increment}>Increment</button>
   </div>
-));
+))
 
-export const MobxApp = () => <App store={store} />;
+export const MobxApp = () => <App store={store} />
